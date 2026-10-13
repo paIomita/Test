@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reformas, revestimientos y acabados para viviendas en Terrassa y Barcelona. Cuéntanos qué espacio quieres renovar.">
+    <meta name="theme-color" content="#101a26">
+    <title>BCN TRADEX LLC | Reformas y acabados</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="BCN TRADEX LLC home"><img src="Banner.png" alt="BCN TRADEX LLC"></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about" data-i18n="navAbout">About the company</a>
+            <a href="#materials" data-i18n="navMaterials">Materials</a>
+            <a href="#services" data-i18n="navServices">Services</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+            <button class="language-switch" id="languageToggle" type="button" aria-label="Switch to Spanish">
+        <img id="languageFlag" src="spain-flag.svg" alt="" aria-hidden="true"><span id="languageLabel">ES</span>
+      </button>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-label="Introduction">
+            <div class="hero-media" aria-label="Reformas y acabados BCN Tradex">
+                <img class="hero-slide is-active" src="FondoInicio.png" alt="" fetchpriority="high">
+                <img class="hero-slide" src="https://images.pexels.com/photos/28683056/pexels-photo-28683056.jpeg?auto=compress&amp;dpr=1&amp;h=1100&amp;w=1800" alt="" aria-hidden="true">
+                <img class="hero-slide" src="https://images.pexels.com/photos/32696572/pexels-photo-32696572/free-photo-of-modern-bathroom-interior-with-tile-design.jpeg?auto=compress&amp;dpr=1&amp;h=1100&amp;w=1800" alt="" aria-hidden="true">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-topline"><span data-i18n="heroLocation">Terrassa · Barcelona</span></div>
+                <div class="hero-main">
+                    <h1 data-i18n="heroTitle">Espacios con intención.<br><em>Acabados impecables.</em></h1>
+                    <p class="eyebrow" data-i18n="eyebrow">Reformas · Acabados · Mantenimiento</p>
+                    <div class="hero-actions"><a class="button button-light" href="#contact"><span data-i18n="heroCta">Solicitar presupuesto</span><b>↗</b></a><a class="hero-secondary" href="#services" data-i18n="heroSecondary">Descubrir servicios</a></div>
+                </div>
+                <div class="hero-bottom"><span>BCN TRADEX LLC</span></div>
+            </div>
+        </section>
+
+        <section class="intro section-narrow" id="about">
+            <div class="intro-inner">
+                <div class="intro-copy">
+                    <span class="section-label" data-i18n="introKicker">REFORMAS EN TERRASSA Y BARCELONA</span>
+                    <h2 data-i18n="introTitle">Espacios pensados<br><em>para durar.</em></h2>
+                    <p data-i18n="introText">Renovamos baños, cocinas y otras estancias con atención especial a la colocación, los materiales y los acabados. Cuéntanos qué necesitas y prepararemos una propuesta adaptada a tu espacio.</p>
+                    <a class="under-link" href="#contact"><span data-i18n="introCta">Hablemos de tu proyecto</span> ↗</a>
+                </div>
+                <div class="about-logo-frame">
+                    <img class="about-logo" src="Logo.png" alt="BCN TRADEX LLC">
+                </div>
+            </div>
+        </section>
+
+        <section class="materials section" id="materials">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label" data-i18n="materialsKicker">MATERIALES Y ACABADOS</span><h2 data-i18n="materialsTitle">La elección<br><em>de cada detalle.</em></h2>
+                </div>
+            </div>
+            <div class="materials-carousel" aria-roledescription="carousel">
+                <button class="material-arrow" id="previousMaterials" type="button" data-i18n-aria-label="previousMaterials" aria-label="Materiales anteriores" disabled>
+                    <iconify-icon icon="solar:alt-arrow-left-outline" aria-hidden="true"></iconify-icon>
+                </button>
+                <div class="material-grid" id="materialsTrack" role="list" data-i18n-aria-label="materialsList"></div>
+                <button class="material-arrow" id="nextMaterials" type="button" data-i18n-aria-label="nextMaterials" aria-label="Más materiales">
+                    <iconify-icon icon="solar:alt-arrow-right-outline" aria-hidden="true"></iconify-icon>
+                </button>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="service-image"><img src="https://images.pexels.com/photos/6121091/pexels-photo-6121091.jpeg?auto=compress&amp;dpr=1&amp;h=1100&amp;w=900" alt="Baño contemporáneo con revestimientos geométricos" loading="lazy">
+            </div>
+            <div class="service-content">
+                <span class="section-label" data-i18n="servicesKicker">REFORMAS Y MEJORAS</span><h2 data-i18n="servicesTitle">Services</h2>
+                <p class="service-lead" data-i18n="servicesText">Texto</p>
+                <div class="service-list">
+                    <article>
+                        <span>01</span><div>
+                            <h3 data-i18n="serviceOne">Texto</h3>
+                            <p data-i18n="serviceOneText">Texto</p>
+                        </div><b><iconify-icon icon="solar:arrow-up-right-outline" aria-hidden="true"></iconify-icon></b></article>
+                    <article>
+                        <span>02</span><div>
+                            <h3 data-i18n="serviceTwo">Maintenance</h3>
+                            <p data-i18n="serviceTwoText">Texto</p>
+                        </div><b><iconify-icon icon="solar:arrow-up-right-outline" aria-hidden="true"></iconify-icon></b></article>
+                    <article>
+                        <span>03</span><div>
+                            <h3 data-i18n="serviceThree">Construction</h3>
+                            <p data-i18n="serviceThreeText">Texto</p>
+                        </div><b><iconify-icon icon="solar:arrow-up-right-outline" aria-hidden="true"></iconify-icon></b></article>
+                    <article>
+                        <span>04</span><div>
+                            <h3 data-i18n="serviceFour">Texto</h3>
+                            <p data-i18n="serviceFourText">Texto</p>
+                        </div><b><iconify-icon icon="solar:arrow-up-right-outline" aria-hidden="true"></iconify-icon></b></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact-copy"><span class="section-label" data-i18n="contactKicker">CONTACT</span>
+                <h2 data-i18n="contactTitle">Contact</h2>
+                <p data-i18n="contactText">Cuéntanos un poco sobre tu espacio y lo que tienes en mente.</p>
+                <div class="contact-points">
+                    <span data-i18n="contactPointOne">Teléfono de contacto · Pendiente de confirmar</span>
+                    <span><span data-i18n="contactPointTwo">Correo de contacto</span> · <a href="mailto:sigma.palomita@gmail.com">sigma.palomita@gmail.com</a></span>
+                    <span data-i18n="contactPointThree">Terrassa · Barcelona</span>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-heading"><strong data-i18n="formTitle">Cuéntanos qué necesitas</strong><span data-i18n="formSub">Déjanos algunos detalles sobre tu proyecto.</span></div>
+                <div class="form-grid"><label><span data-i18n="nameLabel">Nombre</span><input name="name" type="text" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Tu nombre" required></label><label><span data-i18n="phoneLabel2">Teléfono</span><input name="phone" type="tel" autocomplete="tel" data-i18n-placeholder="phonePlaceholder" placeholder="Tu teléfono" required></label><label><span data-i18n="emailLabel">Correo electrónico</span><input name="email" type="email" autocomplete="email" data-i18n-placeholder="emailPlaceholder" placeholder="tu@email.com" required></label><label><span data-i18n="zipLabel">Código postal</span><input name="zip" type="text" autocomplete="postal-code" data-i18n-placeholder="zipPlaceholder" placeholder="Tu código postal" required></label></div>
+                <label class="full-field"><span data-i18n="messageLabel">Describe lo que necesitas</span><textarea name="message" data-i18n-placeholder="messagePlaceholder" placeholder="Describe qué quieres reformar o mejorar..." required></textarea></label>
+                <button class="button button-dark form-submit" type="submit"><span data-i18n="sendButton">Contact</span><b>→</b></button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div><strong>BCN TRADEX LLC</strong><span data-i18n="footerText">Maintenance · Construction · Renovation</span></div>
+        <span>© 2026 BCN TRADEX LLC</span>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                navAbout: "About the company",
+                navMaterials: "Materials",
+                navServices: "Services",
+                navReviews: "Our process",
+                navContact: "Contact",
+                languageLabel: "ES",
+                languageAria: "Switch to Spanish",
+                heroLocation: "Terrassa - Spain",
+                eyebrow: "Renovation · Finishes · Maintenance",
+                heroTitle: "Spaces that inspire.<br><em>Made to last.</em>",
+                heroCta: "Request a quote",
+                heroSecondary: "Explore services",
+                introKicker: "RENOVATIONS IN TERRASSA & BARCELONA",
+                introCta: "Let’s talk about your project",
+                introTitle: "Spaces made<br><em>to last.</em>",
+                introText: "We renovate bathrooms, kitchens and other rooms, with close attention to installation, materials and finishes. Tell us what you need and we’ll prepare a proposal for your space.",
+                materialsKicker: "MATERIALS & FINISHES",
+                materialsTitle: "Surfaces, selected with care.",
+                materialOne: "Wood-effect tile",
+                materialTwo: "Stone mosaic",
+                materialThree: "Natural stone",
+                materialFour: "Geometric tile",
+                materialFive: "Terrazzo",
+                materialSix: "Ceramic tile",
+                materialSeven: "Matte porcelain",
+                materialEight: "Travertine",
+                materialsList: "Materials list",
+                previousMaterials: "Previous materials",
+                nextMaterials: "More materials",
+                servicesTitle: "Services",
+                servicesKicker: "RENOVATION & IMPROVEMENTS",
+                servicesText: "From a focused update to a full room renovation, we help shape the work around your needs.",
+                serviceOne: "Renovations",
+                serviceOneText: "Bathroom, kitchen and interior updates planned around your space.",
+                serviceTwo: "Maintenance",
+                serviceTwoText: "Practical repairs and upkeep to keep your property in good condition.",
+                serviceThree: "Construction",
+                serviceThreeText: "Construction work and improvements, coordinated to your project.",
+                serviceFour: "Tile & stone installation",
+                serviceFourText: "Careful installation of tile, porcelain, marble and other finishes.",
+                processKicker: "A STRAIGHTFORWARD PROCESS",
+                processTitle: "From first idea<br><em>to final finish.</em>",
+                processLead: "Every project starts by understanding what you need. Then we define the scope and materials before work begins.",
+                processOneTitle: "Tell us your idea",
+                processOneText: "Describe the space, what you’d like to change and any references you have.",
+                processTwoTitle: "Plan the proposal",
+                processTwoText: "We review the work and finishes to prepare a proposal for your project.",
+                processThreeTitle: "Bring the space to life",
+                processThreeText: "We coordinate the agreed work and take care through to the finishing details.",
+                contactKicker: "CONTACT",
+                contactTitle: "Contact",
+                contactText: "Share a few details about your space and what you have in mind.",
+                contactPointOne: "Contact phone · To be confirmed",
+                contactPointTwo: "Contact email",
+                contactPointThree: "Terrassa · Barcelona",
+                phoneLabel: "Phone number",
+                emailLabel2: "Contact email",
+                areaLabel: "Location",
+                areaText: "Terrassa - Spain",
+                formTitle: "Tell us what you need",
+                formSub: "Leave a few details about your project.",
+                nameLabel: "Name",
+                phoneLabel2: "Phone",
+                emailLabel: "Email",
+                zipLabel: "Postal code",
+                messageLabel: "Describe what you need",
+                sendButton: "Send enquiry",
+                namePlaceholder: "Your name",
+                phonePlaceholder: "Your phone number",
+                emailPlaceholder: "you@email.com",
+                zipPlaceholder: "Postal code",
+                messagePlaceholder: "Describe what you’d like to renovate or improve...",
+                formNotice: "Your email app has opened with the enquiry ready to send.",
+                footerText: "Maintenance · Construction · Renovation"
+            },
+            es: {
+                navAbout: "Sobre la empresa",
+                navMaterials: "Materiales",
+                navServices: "Servicios",
+                navReviews: "Cómo trabajamos",
+                navContact: "Contacto",
+                languageLabel: "EN",
+                languageAria: "Cambiar a inglés",
+                heroLocation: "Terrassa - España",
+                eyebrow: "Reformas · Acabados · Mantenimiento",
+                heroTitle: "Espacios con intención.<br><em>Acabados impecables.</em>",
+                heroCta: "Solicitar presupuesto",
+                heroSecondary: "Descubrir servicios",
+                introKicker: "REFORMAS EN TERRASSA Y BARCELONA",
+                introCta: "Hablemos de tu proyecto",
+                introTitle: "Espacios pensados<br><em>para durar.</em>",
+                introText: "Renovamos baños, cocinas y otras estancias con atención especial a la colocación, los materiales y los acabados. Cuéntanos qué necesitas y prepararemos una propuesta adaptada a tu espacio.",
+                materialsKicker: "MATERIALES Y ACABADOS",
+                materialsTitle: "Superficies elegidas con cuidado.",
+                materialOne: "Azulejo efecto madera",
+                materialTwo: "Mosaico tono piedra",
+                materialThree: "Piedra natural",
+                materialFour: "Azulejo geométrico",
+                materialFive: "Terrazo",
+                materialSix: "Azulejo cerámico",
+                materialSeven: "Porcelánico mate",
+                materialEight: "Travertino",
+                materialsList: "Lista de materiales",
+                previousMaterials: "Materiales anteriores",
+                nextMaterials: "Más materiales",
+                servicesTitle: "Servicios",
+                servicesKicker: "REFORMAS Y MEJORAS",
+                servicesText: "Desde una mejora puntual hasta la reforma de una estancia, adaptamos el trabajo a lo que necesitas.",
+                serviceOne: "Reformas",
+                serviceOneText: "Reformas de baños, cocinas e interiores adaptadas a cada espacio.",
+                serviceTwo: "Mantenimiento",
+                serviceTwoText: "Reparaciones y mantenimiento para conservar tu propiedad en buen estado.",
+                serviceThree: "Construcciones",
+                serviceThreeText: "Trabajos de construcción y mejora coordinados según el proyecto.",
+                serviceFour: "Colocación de revestimientos",
+                serviceFourText: "Colocación cuidada de azulejo, porcelánico, mármol y otros acabados.",
+                processKicker: "UN PROCESO SENCILLO",
+                processTitle: "De la primera idea<br><em>al último acabado.</em>",
+                processLead: "Cada proyecto empieza escuchando lo que necesitas. Después definimos el alcance y los materiales antes de empezar.",
+                processOneTitle: "Nos cuentas tu idea",
+                processOneText: "Describe el espacio, lo que quieres cambiar y cualquier referencia que tengas.",
+                processTwoTitle: "Preparamos la propuesta",
+                processTwoText: "Revisamos el trabajo y los acabados para concretar una propuesta para tu proyecto.",
+                processThreeTitle: "Damos forma al espacio",
+                processThreeText: "Coordinamos los trabajos acordados y cuidamos la ejecución hasta el acabado.",
+                contactKicker: "CONTACTO",
+                contactTitle: "Contacto",
+                contactText: "Cuéntanos un poco sobre tu espacio y lo que tienes en mente.",
+                contactPointOne: "Teléfono de contacto · Pendiente de confirmar",
+                contactPointTwo: "Correo de contacto",
+                contactPointThree: "Terrassa · Barcelona",
+                phoneLabel: "Número de teléfono",
+                emailLabel2: "Correo de contacto",
+                areaLabel: "Ubicación",
+                areaText: "Terrassa - España",
+                formTitle: "Cuéntanos qué necesitas",
+                formSub: "Déjanos algunos detalles sobre tu proyecto.",
+                nameLabel: "Nombre",
+                phoneLabel2: "Teléfono",
+                emailLabel: "Correo electrónico",
+                zipLabel: "Código postal",
+                messageLabel: "Describe lo que necesitas",
+                sendButton: "Enviar consulta",
+                namePlaceholder: "Tu nombre",
+                phonePlaceholder: "Tu teléfono",
+                emailPlaceholder: "tu@email.com",
+                zipPlaceholder: "Tu código postal",
+                messagePlaceholder: "Describe qué quieres reformar o mejorar...",
+                formNotice: "Se ha abierto tu aplicación de correo con la consulta preparada para enviar.",
+                footerText: "Mantenimiento · Construcción · Reformas"
+            }
+        };
+        let currentLanguage = "es";
+        const toggle = document.getElementById("languageToggle"),
+            flag = document.getElementById("languageFlag"),
+            label = document.getElementById("languageLabel"),
+            form = document.getElementById("contactForm"),
+            status = document.getElementById("formStatus");
+        const materialsTrack = document.getElementById("materialsTrack");
+        const previousMaterials = document.getElementById("previousMaterials");
+        const nextMaterials = document.getElementById("nextMaterials");
+        const materialCatalog = [{name:"materialOne",image:"Material1.webp"},{name:"materialTwo",image:"Material2.webp"},{name:"materialThree",image:"Material3.webp"},{name:"materialFour",image:"Material4.webp"},{name:"materialFive",image:"https://images.unsplash.com/photo-1621885353353-474aee939bf6?auto=format&fit=crop&w=1000&q=85"},{name:"materialSix",image:"https://images.unsplash.com/photo-1681752054467-e7132ed8b47e?auto=format&fit=crop&w=1000&q=85"},{name:"materialSeven",image:"https://imaginedeco.es/images/articulos/13507/0960170037254.jpg"},{name:"materialEight",image:"https://neolit.kiev.ua/site_data/s4/images/travertin-tsveta/travertin_bejevyiy_Travertine_Medium%2C_turtsiya.JPG"}];
+
+        materialCatalog.forEach(material => {
+            const card = document.createElement("article");
+            card.className = "material-card";
+            card.setAttribute("role", "listitem");
+
+            const imageFrame = document.createElement("div");
+            imageFrame.className = "material-image";
+            const image = document.createElement("img");
+            image.src = material.image;
+            image.alt = "";
+            image.loading = "lazy";
+            imageFrame.append(image);
+
+            const info = document.createElement("div");
+            info.className = "material-info";
+            const title = document.createElement("h3");
+            title.dataset.i18n = material.name;
+            title.textContent = translations[currentLanguage][material.name];
+            info.append(title);
+            card.append(imageFrame, info);
+            materialsTrack.append(card);
+        });
+
+        function updateMaterialArrows() {
+            const maxScroll = materialsTrack.scrollWidth - materialsTrack.clientWidth;
+            previousMaterials.disabled = materialsTrack.scrollLeft <= 5;
+            nextMaterials.disabled = maxScroll <= 5 || materialsTrack.scrollLeft >= maxScroll - 5;
+        }
+
+        function scrollMaterials(direction) {
+            const firstCard = materialsTrack.querySelector(".material-card");
+            if (!firstCard) return;
+            const gap = parseFloat(getComputedStyle(materialsTrack).gap) || 0;
+            materialsTrack.scrollBy({
+                left: direction * (firstCard.getBoundingClientRect().width + gap),
+                behavior: "smooth"
+            });
+        }
+
+        previousMaterials.addEventListener("click", () => scrollMaterials(-1));
+        nextMaterials.addEventListener("click", () => scrollMaterials(1));
+        materialsTrack.addEventListener("scroll", () => window.requestAnimationFrame(updateMaterialArrows), {
+            passive: true
+        });
+        window.addEventListener("resize", updateMaterialArrows);
+
+        function applyLanguage(lang) {
+            currentLanguage = lang;
+            document.documentElement.lang = lang;
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const v = translations[lang][el.dataset.i18n];
+                if (v !== undefined) el.innerHTML = v;
+            });
+            document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+                const v = translations[lang][el.dataset.i18nPlaceholder];
+                if (v !== undefined) el.placeholder = v;
+            });
+            document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+                const v = translations[lang][el.dataset.i18nAriaLabel];
+                if (v !== undefined) el.setAttribute("aria-label", v);
+            });
+            label.textContent = translations[lang].languageLabel;
+            toggle.setAttribute("aria-label", translations[lang].languageAria);
+            flag.src = lang === "en" ? "spain-flag.svg" : "uk-flag.svg";
+            status.textContent = "";
+        }
+
+        function updateLanguage(lang, animate = true) {
+            if (!animate) {
+                applyLanguage(lang);
+                return;
+            }
+            document.body.classList.add("language-changing");
+            window.setTimeout(() => {
+                applyLanguage(lang);
+                window.requestAnimationFrame(() => document.body.classList.add("language-changing-in"));
+            }, 170);
+            window.setTimeout(() => {
+                document.body.classList.remove("language-changing", "language-changing-in");
+            }, 420);
+        }
+        updateLanguage(currentLanguage, false);
+        updateMaterialArrows();
+        toggle.addEventListener("click", () => updateLanguage(currentLanguage === "en" ? "es" : "en"));
+
+        const heroSlides = [...document.querySelectorAll(".hero-slide")];
+        if (heroSlides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            let activeSlide = 0;
+            window.setInterval(() => {
+                heroSlides[activeSlide].classList.remove("is-active");
+                activeSlide = (activeSlide + 1) % heroSlides.length;
+                heroSlides[activeSlide].classList.add("is-active");
+            }, 5500);
+        }
+
+        document.querySelector(".site-nav").addEventListener("click", event => {
+            const link = event.target.closest('a[href^="#"]');
+            if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            const target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            if (window.location.hash !== link.hash) history.pushState(null, "", link.hash);
+            const headerHeight = document.querySelector(".site-header").getBoundingClientRect().height;
+            const bounds = target.getBoundingClientRect();
+            const targetCenter = window.scrollY + bounds.top + bounds.height / 2;
+            const visibleCenter = (window.innerHeight + headerHeight) / 2;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            window.scrollTo({
+                top: Math.min(maxScroll, Math.max(0, targetCenter - visibleCenter)),
+                behavior: "auto"
+            });
+        });
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            const data = new FormData(form);
+            const subject = currentLanguage === "es" ? "Nueva consulta desde la web" : "New website enquiry";
+            const payload = Object.fromEntries(data.entries());
+            payload._subject = subject;
+            payload._replyto = payload.email;
+            payload._template = "table";
+            const button = form.querySelector('[type="submit"]');
+            button.disabled = true;
+            status.textContent = currentLanguage === "es" ? "Enviando tu consulta…" : "Sending your enquiry…";
+
+            fetch("https://formsubmit.co/ajax/sigma.palomita@gmail.com", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
+                body: JSON.stringify(payload)
+            })
+                .then(response => {
+                    if (!response.ok) throw new Error("Submission failed");
+                    return response.json();
+                })
+                .then(() => {
+                    status.textContent = currentLanguage === "es"
+                        ? "¡Consulta enviada! Nos pondremos en contacto contigo pronto."
+                        : "Enquiry sent! We’ll be in touch soon.";
+                    form.reset();
+                })
+                .catch(() => {
+                    status.textContent = currentLanguage === "es"
+                        ? "No se pudo enviar. Inténtalo de nuevo más tarde o escríbenos a sigma.palomita@gmail.com."
+                        : "Could not send. Please try again later or email sigma.palomita@gmail.com.";
+                })
+                .finally(() => { button.disabled = false; });
+        });
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        }), {
+            threshold: .08
+        });
+        document.querySelectorAll(".section,.material-card").forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
