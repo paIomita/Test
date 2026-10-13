@@ -418,9 +418,14 @@
             e.preventDefault();
             const data = new FormData(form);
             const subject = currentLanguage === "es" ? "Nueva consulta desde la web" : "New website enquiry";
-            const payload = Object.fromEntries(data.entries());
+            const fieldLabels = currentLanguage === "es"
+                ? { name: "Nombre", phone: "Número de Teléfono", email: "Correo Electrónico", zip: "Código Postal", message: "Mensaje" }
+                : { name: "Name", phone: "Phone Number", email: "Email Address", zip: "Postal Code", message: "Message" };
+            const payload = Object.fromEntries(
+                [...data.entries()].map(([key, value]) => [fieldLabels[key] || key, value])
+            );
             payload._subject = subject;
-            payload._replyto = payload.email;
+            payload._replyto = data.get("email");
             payload._template = "table";
             const button = form.querySelector('[type="submit"]');
             button.disabled = true;
