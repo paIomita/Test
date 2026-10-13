@@ -116,7 +116,7 @@
                 <p data-i18n="contactText">Cuéntanos un poco sobre tu espacio y lo que tienes en mente.</p>
                 <div class="contact-points">
                     <span data-i18n="contactPointOne">Teléfono de contacto · Pendiente de confirmar</span>
-                    <span><span data-i18n="contactPointTwo">Correo de contacto</span> · <a href="mailto:sigma.palomita@gmail.com">sigma.palomita@gmail.com</a></span>
+                    <span><span data-i18n="contactPointTwo">Correo de contacto:</span> <a href="mailto:jose@jbjtradex.com">jose@jbjtradex.com</a></span>
                     <span data-i18n="contactPointThree">Terrassa · Barcelona</span>
                 </div>
             </div>
@@ -191,7 +191,7 @@
                 contactTitle: "Contact",
                 contactText: "Share a few details about your space and what you have in mind.",
                 contactPointOne: "Contact phone · To be confirmed",
-                contactPointTwo: "Contact email",
+                contactPointTwo: "Contact email:",
                 contactPointThree: "Terrassa · Barcelona",
                 phoneLabel: "Phone number",
                 emailLabel2: "Contact email",
@@ -267,7 +267,7 @@
                 contactTitle: "Contacto",
                 contactText: "Cuéntanos un poco sobre tu espacio y lo que tienes en mente.",
                 contactPointOne: "Teléfono de contacto · Pendiente de confirmar",
-                contactPointTwo: "Correo de contacto",
+                contactPointTwo: "Correo de contacto:",
                 contactPointThree: "Terrassa · Barcelona",
                 phoneLabel: "Número de teléfono",
                 emailLabel2: "Correo de contacto",
@@ -431,7 +431,7 @@
             button.disabled = true;
             status.textContent = currentLanguage === "es" ? "Enviando tu consulta…" : "Sending your enquiry…";
 
-            fetch("https://formsubmit.co/ajax/sigma.palomita@gmail.com", {
+            fetch("https://formsubmit.co/ajax/jose@jbjtradex.com", {
                 method: "POST",
                 headers: { "Content-Type": "application/json", Accept: "application/json" },
                 body: JSON.stringify(payload)
@@ -448,8 +448,8 @@
                 })
                 .catch(() => {
                     status.textContent = currentLanguage === "es"
-                        ? "No se pudo enviar. Inténtalo de nuevo más tarde o escríbenos a sigma.palomita@gmail.com."
-                        : "Could not send. Please try again later or email sigma.palomita@gmail.com.";
+                        ? "No se pudo enviar. Inténtalo de nuevo más tarde o escríbenos a jose@jbjtradex.com."
+                        : "Could not send. Please try again later or email jose@jbjtradex.com.";
                 })
                 .finally(() => { button.disabled = false; });
         });
